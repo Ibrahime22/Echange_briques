@@ -11,4 +11,4 @@ Fonctionnalités
 
 
 
-(https://github.com/Ibrahime22/Echange_briques/blob/2d74e1bb29e8f7107e4962eb0fef59d99295c5a6/accueil.png)
+![image alt](https://github.com/Ibrahime22/Echange_briques/blob/71c20ac6b0b143435abf0014209c063451b2d003/confiden.png)
