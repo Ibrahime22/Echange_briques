@@ -11,4 +11,4 @@ Fonctionnalités
 
 
 
-!{ image alt}(https://github.com/Ibrahime22/Echange_briques/blob/02e8984a80b700fb08ad03e331ca7daa3798dd0c/accueil.png)
+!{ image alt}(accueil.png)
