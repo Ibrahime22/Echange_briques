@@ -16,3 +16,4 @@ Fonctionnalités
 ![image alt](https://github.com/Ibrahime22/Echange_briques/blob/de04803871c88948f6beced5fe06941710e1947c/creer%20echange.png)
 ![image  alt](https://github.com/Ibrahime22/Echange_briques/blob/62a10c62c2886966db3993484699ed5c636019c0/creerechange.png)
 ![image alt](https://github.com/Ibrahime22/Echange_briques/blob/e6c0bf1574be2d04cc31bf907dfee8da55ba93b3/apropos.png)
+1[image alt](https://github.com/Ibrahime22/Echange_briques/blob/8883e04fd1828e0757e846b73fd2515c769e7f92/confiden.png)
