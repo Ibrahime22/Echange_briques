@@ -1,0 +1,44 @@
+<div class="container mt-5">
+    <h1 class="mb-4">Créer un Échange de Briques</h1>
+
+    <!-- Error message for validation at the top -->
+    <div id="quantityError" class="text-info mb-3"></div>
+    <div id="exchangeNameError" class="text-info mb-3"></div>
+    <div id="generalExchangeNameError" class="text-info mb-3"></div>
+    <div id="generalExchangeNameSuccess" class="text-info mb-3"></div>
+
+
+    <!-- Formulaire -->
+    <form id="createExchangeForm">
+        <!-- Nom de l'échange -->
+        <div class="mb-3 d-flex">
+            <div class="flex-grow-1">
+                <label for="exchangeName" class="form-label">Nom de l'échange</label>
+                <input type="text" id="exchangeName" class="form-control form-control-lg" maxlength="50" />
+            </div>
+            <button type="submit" class=" btn-secondary ms-2 btn-lg">Soumettre l'échange</button>
+        </div>
+
+        <!-- Quantités de chaque brique -->
+        <div class="row">
+            {{#each briques}}
+            <div class="col-md-4 mb-3">
+                <div class="card d-flex flex-row align-items-center">
+                    <!-- Contenu de la carte -->
+                    <div class="card-body">
+                        <h5 class="card-title">{{nom}}</h5>
+                        <p class="card-text">Couleur : {{id_couleur}}</p>
+                        <p class="card-text">Design : {{id_design}}</p>
+                        <p class="card-text">Valeur : {{valeur}} $</p>
+                        <input type="number" id="quantity_{{id_brique}}" class="form-control" min="0"
+                            placeholder="Quantité" data-id-brique="{{id_brique}}" />
+                    </div>
+                    <!-- Image à droite de la carte -->
+                    <img src="/img/{{image}}" alt="Image de {{nom}}" class="img-fluid"
+                        style="max-width: 100px; max-height: 100px; margin:0px 10px">
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h1 class="mb-4">Tous les Échanges Proposés</h1>
+    <div class="row">
+        {{#each echanges}}
+        <div class="col-md-4 mb-3">
+            <div class="card d-flex flex-row align-items-center">
+                <!-- Contenu de la carte -->
+                <div class="card-body">
+                    <h5 class="card-title">{{nom_echange}}</h5>
+                    <p class="card-text">Proposé par : {{nom_utilisateur}}</p>
+                    <a href="/echange/{{id_echange}}" class="btn btn-secondary">Voir les détails</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

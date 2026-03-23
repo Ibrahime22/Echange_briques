@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <h1 class="mb-4">Détails de l'Échange</h1>
+
+    {{#if echange}}
+    <!-- Informations de l'échange -->
+    <h3>Nom de l'échange : {{echange.nom_echange}}</h3>
+    <p><strong>Proposé par :</strong> {{echange.nom_utilisateur}}</p>
+
+    <!-- Liste des briques échangées -->
+    <h4>Briques proposées :</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nom de la brique</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Valeur unitaire</th>
+                <th scope="col">Valeur totale</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each briques}}
+            <tr>
+                <td>{{nom_brique}}</td>
+                <td>{{quantite}}</td>
+                <td>{{valeur}} $</td>
+                <td>{{sous_total}} $</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <!-- Valeur totale de l'échange -->
+    <h4>Valeur totale de l'échange : {{valeur_totale}} $</h4>
+    {{else}}
+    <!-- Message d'erreur si l'échange n'existe pas -->
+    <p class="text-danger">Erreur : L'échange que vous cherchez n'existe pas ou n'est pas valide.</p>
+    {{/if}}
+</div>
